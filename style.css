@@ -1,0 +1,103 @@
+/* Import FiraCode (best looking monospace font ever) */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+
+body {
+  font-size: 14px;
+  font-family: 'Fira Code', monospace;
+  background-color: #19171E;
+}
+
+main, nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  width: 80%;
+  border-radius: 20px;
+  background-color: #201E25;
+  margin: 10px 10% 10px 10%;
+  padding-bottom: 20px;
+}
+
+.display {
+  width: 80%;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #201E25;
+}
+
+.display h1 {
+  padding: 0;
+  margin-top: 5px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 5px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #2F2B38;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reference {
+  position: absolute;
+  bottom: 10px;
+  margin: 0px;
+}
+
+.definition {
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
+  padding: 0;
+  height: 50%;
+  flex-wrap: wrap;
+  word-wrap: normal;
+  margin-top: 0px;
+}
+
+p, label {
+  color: whitesmoke;
+}
+
+h1 {
+  color: #f84982;
+}
+
+.card h1 {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #f84982;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B83561;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #78233F;
+}

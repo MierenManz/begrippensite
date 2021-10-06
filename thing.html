@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Begrippenlijst</title>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <h1>Begrippenlijst@InternetArchitectuur:~$</h1>
+    <div class="container">
+      <input type="checkbox" name="interweb" id="interweb">
+      <label for="interweb">Toggle Internet Definitions</label>
+      <input type="checkbox" name="hardware" id="hardware">
+      <label for="hardware">Toggle Hardware Definitions</label>
+      <input type="checkbox" name="network" id="network">
+      <label for="network">Toggle Network Definitions</label>
+      <input type="checkbox" name="cmds" id="cmds">
+      <label for="cmds">Toggle Command Definitions</label>
+      <input type="checkbox" name="osi" id="osi">
+      <label for="osi">Toggle OSI Definitions</label>
+    </div>
+  </nav>
+  <main>
+
+    <div class="container display" id="display_interweb">
+      <h1>Interweb</h1>
+      <div class="category">
+
+        <div class="card">
+          <h1>TCP</h1>
+          <p class="definition">
+            TCP staat voor Transmission Control Protocol.
+            Het werkt door een verzoek om te verbinden te sturen.
+            Daarna stuurt de server een erkenning.
+            Waarna de computer weer een erkenning terug<br />stuurt.
+            Nu is er een verbinding.
+          </p>
+          <p class="reference">definition@source:~$ <a
+              href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>UDP</h1>
+          <p class="definition">
+            UDP staat voor User Datagram Protocol.
+            Het lijkt een beetje op TCP, maar het heeft niet de connectie stap die
+            TCP wel heeft.
+            UDP stuurt heel simpel gewoon de data door naar het IP dat is opgegeven zonder eerst te
+            proberen te verbinden.
+          </p>
+          <p class="reference">definition@source:~$ <a
+              href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>IPv4</h1>
+          <p class="definition">
+            IPv4 staat voor Internet Protocol version 4.
+            Het is een protocol om te zorgen dat je met andere computers kan
+            verbinden over een WAN of LAN netwerk.
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>IPv6</h1>
+          <p class="definition">
+            IPv6 staat voor Internet Protocol version 6.
+            Het is een protocol om te zorgen dat je met andere computers kan
+            verbinden over een WAN of LAN netwerk.
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>IP adres</h1>
+          <p class="definition">IP adress is het Internet protocol adress. Dit zit er vaak uit als het volgende
+            '127.0.0.1'
+            (IPv4). Het is bedoeld als een soort ID voor als je op het
+            internet bent zodat servers weten waar een verzoek vandaan komt en waar ze een hun antwoord naartoe moeten
+            sturen.</p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>Subnetmask</h1>
+          <p class="definition">een subnetwerk is een netwerk dat in twee of meer delen is gedeeld. een subnetmask is er
+            om aan te geven welke pc bij welk netwerk hoort.
+          </p>
+          <p class="reference">definition@source:~$ <a href="https://en.wikipedia.org/wiki/Subnetwork">Wikipedia</a></p>
+        </div>
+
+        <div class="card">
+          <h1>Gateway</h1>
+          <p class="definition">
+            De Gateway is als de 'ingang en uitgang' van je netwerk.
+            Heel je netwerk gaat via deze ingang/uitgang.
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>MAC Adres</h1>
+          <p class="definition">
+            Een MAC adres is een uniek adres voor de meeste electronische apparaten zoals telefoons
+            en computers
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container display" id="display_hardware">
+      <h1>Hardware</h1>
+      <div class="category">
+
+        <div class="card">
+          <h1>Hub</h1>
+          <p class="definition">Een hub is een apparaat dat 1 netwerk poort splitst naar meerdere poorten.<br />Vaak 4,
+            8,
+            16, 32 of zelf
+            64 poorten
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>Switch</h1>
+          <p class="definition">Een switch is bijna hetzelfde als een hub, maar een hub heeft geen logica en werkt
+            verder als het originele netwerk.<br /> een switch een subnet maakt
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container display" id="display_network">
+      <h1>Networking</h1>
+      <div class="category">
+
+        <div class="card">
+          <h1>Firewall</h1>
+          <p class="definition">Een protectie laag die netwerk verzoeken filtert. Alles wat er volgens de firewall uit
+            ziet als onveilig word vaak geblokkeerd.
+          </p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>DHCP</h1>
+          <p class="definition">DHCP staat voor Dynamic Host Configuration Protocol. Het is een protocol dat IP adressen
+            kan geven aan apparaten op het netwerk.
+          </p>
+          <p class="reference">definition@source:~$ <a
+              href="https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">Wikipedia</a></p>
+        </div>
+
+        <div class="card">
+          <h1>DDNS</h1>
+          <p class="definition">Een DDNS is een Dynamic Domain Name Server. Het is een dns die realtime zichzelf kan
+            updaten zonder dat een persoon hier veel aan hoeft te doen.</p>
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+        <div class="card">
+          <h1>Poort</h1>
+          <p class="definition">Een netwerk is een beetje zoals een huis.<br />Een poort in een netwerk is dan een
+            beetje als
+            raam of deur.
+          <p class="reference">definition@source:~$ Ome Dennis</p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
