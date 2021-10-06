@@ -14,23 +14,33 @@
   <nav>
     <h1>Begrippenlijst@InternetArchitectuur:~$</h1>
     <div class="container">
-      <input type="checkbox" name="interweb" id="interweb">
-      <label for="interweb">Toggle Internet Definitions</label>
-      <input type="checkbox" name="hardware" id="hardware">
-      <label for="hardware">Toggle Hardware Definitions</label>
-      <input type="checkbox" name="network" id="network">
-      <label for="network">Toggle Network Definitions</label>
-      <input type="checkbox" name="cmds" id="cmds">
-      <label for="cmds">Toggle Command Definitions</label>
-      <input type="checkbox" name="osi" id="osi">
-      <label for="osi">Toggle OSI Definitions</label>
+      <div class="toggle">
+        <input type="checkbox" name="interweb" id="interweb">
+        <label for="interweb">Toggle Internet Definitions</label>
+      </div>
+      <div class="toggle">
+        <input type="checkbox" name="hardware" id="hardware">
+        <label for="hardware">Toggle Hardware Definitions</label>
+      </div>
+      <div class="toggle">
+        <input type="checkbox" name="network" id="network">
+        <label for="network">Toggle Network Definitions</label>
+      </div>
+      <div class="toggle">
+        <input type="checkbox" name="cmds" id="cmds">
+        <label for="cmds">Toggle Command Definitions</label>
+      </div>
+      <div class="toggle">
+        <input type="checkbox" name="osi" id="osi">
+        <label for="osi">Toggle OSI Definitions</label>
+      </div>
     </div>
   </nav>
   <main>
 
     <div class="container display" id="display_interweb">
       <h1>Interweb</h1>
-      <div class="category">
+      <div class="category" id="cat_interweb">
 
         <div class="card">
           <h1>TCP</h1>
@@ -121,24 +131,47 @@
 
     <div class="container display" id="display_hardware">
       <h1>Hardware</h1>
-      <div class="category">
+      <div class="category" id="cat_hardware">
 
         <div class="card">
           <h1>Hub</h1>
-          <p class="definition">Een hub is een apparaat dat 1 netwerk poort splitst naar meerdere poorten.<br />Vaak 4,
-            8,
-            16, 32 of zelf
-            64 poorten
+          <p class="definition">
+            Een hub is een apparaat dat 1 netwerk poort splitst naar meerdere poorten.<br />
+            Vaak 4, 8, 16, 32 of zelfs 64 poorten.
           </p>
-          <p class="reference">definition@source:~$ Ome Dennis</p>
+          <p class="reference">
+            definition@source:~$ <a href="https://en.wikipedia.org/wiki/Ethernet_hub">Wikipedia</a>
+          </p>
         </div>
 
         <div class="card">
           <h1>Switch</h1>
-          <p class="definition">Een switch is bijna hetzelfde als een hub, maar een hub heeft geen logica en werkt
-            verder als het originele netwerk.<br /> een switch een subnet maakt
+          <p class="definition">
+            Een switch is bijna hetzelfde als een hub, maar een hub heeft geen logica en werkt
+            verder als het originele netwerk.<br /> een switch een subnet maakt.
           </p>
-          <p class="reference">definition@source:~$ Ome Dennis</p>
+          <p class="reference">
+            definition@source:~$ <a href="https://en.wikipedia.org/wiki/Network_switch">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Bridge</h1>
+          <p class="definition">
+            Een bridge is een apparaat wat 2 delen van een netwerk aan elkaar kan linken.
+          </p>
+          <p class="reference">definition@source:~$ <a
+              href="https://en.wikipedia.org/wiki/Bridging_(networking)">Wikipedia</a></p>
+        </div>
+
+        <div class="card">
+          <h1>Router</h1>
+          <p class="definition">
+            Een router is een apparaat die data verstuurd tussen 2 netwerken.
+          </p>
+          <p class="reference">
+            definition@source:~$ <a href="https://en.wikipedia.org/wiki/Router_(computing)">Wikipedia</a>
+          </p>
         </div>
 
       </div>
@@ -146,7 +179,7 @@
 
     <div class="container display" id="display_network">
       <h1>Networking</h1>
-      <div class="category">
+      <div class="category" id="cat_network">
 
         <div class="card">
           <h1>Firewall</h1>
@@ -183,6 +216,146 @@
       </div>
     </div>
 
+    <div class="container display" id="display_cmds">
+      <h1>Commands</h1>
+      <div class="category" id="cat_cmds">
+
+        <div class="card">
+          <h1>ipconfig</h1>
+          <p class="definition">
+            Laat de ip configuratie van je pc zien. Bijvoorbeeld alle netwerken waar je aan bent
+            gekoppeld en wat de adressen zijn voor die gate's en andere handige info.
+          </p>
+          <p class="reference">definition@source:~$ --help argument</p>
+        </div>
+
+        <div class="card">
+          <h1>ping</h1>
+          <p class="definition">
+            Stuurt een packet met daarin ping.<br />Handig om te kijken of een pc werkt of dat je internet hebt.
+          </p>
+          <p class="reference">definition@source:~$ --help argument</p>
+        </div>
+
+        <div class="card">
+          <h1>tracert</h1>
+          <p class="definition">
+            Tracert is kort voor trace route.
+            Hiermee kan je zien hoe een verzoek naar een webserver gaat.
+          </p>
+          <p class="reference">definition@source:~$ --help argument</p>
+        </div>
+
+        <div class="card">
+          <h1>nslookup</h1>
+          <p class="definition">
+            nslookup is een command waarmee je via de domain name server een ip kan krijgen van een
+            domein naam.
+          </p>
+          <p class="reference">definition@source:~$ --help argument</p>
+        </div>
+
+        <div class="card">
+          <h1>netstat</h1>
+          <p class="definition">
+            netstat laat zien met welke servers je verbonden bent.
+          </p>
+          <p class="reference">definition@source:~$ --help argument</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container display" id="display_osi">
+      <h1>OSI Model</h1>
+      <div class="category" id="cat_osi">
+
+        <div class="card">
+          <h1>Applicatie Laag</h1>
+          <p class="definition">
+            De applicatie laag is de laag die het dichts bij de end-user komt.
+            Dit zijn de bytestreams en binary arrays die je binnen krijgt over het netwerk
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_7:_Application_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Presentatie Laag</h1>
+          <p class="definition">
+            De presentatie laag transformeerd de data vanuit de sessie laag naar data wat de
+            applicatie laag kan begrijpen.<br />Dus de raw bits omzetten naar een bytestream of een binary array
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_6:_Presentation_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Sessie Laag</h1>
+          <p class="definition">
+            De sessie laag zorgt voor de dialoog tussen de computers.
+            Bijvoorbeeld hoeveel packet's nog binnen moeten komen etc.
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_5:_Session_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Transport Laag</h1>
+          <p class="definition">
+            De transport laag is de laag die alles regelt met content van variabele lengte,
+            zoals VoIP (Voice over Internet Protocol)
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_4:_Transport_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Netwerk Laag</h1>
+          <p class="definition">
+            De netwerk laag is de laag die ervoor zorgt dat "packets" van een netwerk node naar de andere komt
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_3:_Network_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Datalink Laag</h1>
+          <p class="definition">
+            De datalink laag is de laag die fouten kan vinden in de fysieke laag.<br />
+            Bijvoorbeeld het detecteren van bitshifts.
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_2:_Data_Link_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <h1>Fysieke Laag</h1>
+          <p class="definition">
+            De fysieke laag is de laag die "rauwe" data stuurt.
+            En dus digitale bit's om zet naar electrische signalen.
+          </p>
+          <p class="reference">
+            definition@source:~$
+            <a href="https://en.wikipedia.org/wiki/OSI_model#Layer_1:_Physical_Layer">Wikipedia</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
   </main>
 
   <footer>

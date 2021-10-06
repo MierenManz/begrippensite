@@ -15,11 +15,34 @@ main, nav {
 }
 
 nav {
-  width: 80%;
+  width: 60%;
   border-radius: 20px;
   background-color: #201E25;
-  margin: 10px 10% 10px 10%;
+  margin: 15px 20% 15px 20%;
   padding-bottom: 20px;
+}
+
+.container {
+  position: static;
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.toggle {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.toggle input {
+  margin: 0;
+  padding: 0;
+}
+
+.toggle label {
+  margin: 0;
+  padding: 0;
 }
 
 .display {
@@ -99,5 +122,5 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-  color: #78233F;
+  /* color: #78233F; */
 }
